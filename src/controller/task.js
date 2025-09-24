@@ -12,7 +12,7 @@ const createTask = async (req, res) => {
             return res.status(400).json({ message: 'No user found with this ID' });
         }
 
-        if (!taskOne || !taskTwo || !taskThree || !taskFour || !taskFive) {
+        if (!taskOne || !taskTwo || !taskThree || !taskFour || !taskFive || !userId) {
             return res.status(400).json({ message: 'All fields are compulsory' });
         }
 
